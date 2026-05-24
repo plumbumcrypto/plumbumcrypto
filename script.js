@@ -49,7 +49,7 @@ const observer = new IntersectionObserver(function (entries) {
 }, observerOptions);
 
 document.querySelectorAll('.card, .feature, .creator-card').forEach(el => {
-    el.style.opacity = '0';
+   // el.style.opacity = '0';
     observer.observe(el);
 });
 
