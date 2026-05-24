@@ -133,8 +133,9 @@ header h1 {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.6s;
     border-left: 5px solid #d4af37;
+    opacity: 1; /* Элемент ВСЕГДА видим по умолчанию */
 }
 
 .card:hover {
@@ -179,7 +180,8 @@ header h1 {
     text-align: center;
     color: white;
     border: 1px solid rgba(212, 175, 55, 0.3);
-    transition: all 0.3s;
+    transition: all 0.3s, opacity 0.6s;
+    opacity: 1; /* Элемент ВСЕГДА видим по умолчанию */
 }
 
 .feature:hover {
@@ -220,6 +222,8 @@ header h1 {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 1; /* Элемент ВСЕГДА видим по умолчанию */
+    transition: opacity 0.6s;
 }
 
 .creator-avatar {
